@@ -10117,12 +10117,17 @@ section.resume-section .resume-section-content {
   left: 50%;
   transform: translate(-50%, -50%);
   color:black;
+
 }
 
 .containerportfolio {
   position: relative;
   text-align: center;
   color: black;
+}
+
+.img-fluid {
+  border-radius: 50px;
 }
 
 

@@ -10084,10 +10084,6 @@ p.lead {
   font-size: 3rem;
 }
 
-.ulhome {
-  
-}
-
 section.resume-section {
   display: flex;
   align-items: center;
@@ -10114,4 +10110,26 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.centeredportfolio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+
+}
+
+.containerportfolio {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.img-fluid {
+  border-radius: 50px;
+}
+
+
+
 
