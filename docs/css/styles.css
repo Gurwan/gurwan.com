@@ -10130,6 +10130,15 @@ section.resume-section .resume-section-content {
   border-radius: 50px;
 }
 
+.content_portfolio {
+  font-family: sans-serif;
+  font-size: large;
+}
 
+.link_portfolio {
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
 
 
