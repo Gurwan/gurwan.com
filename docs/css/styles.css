@@ -10141,4 +10141,11 @@ section.resume-section .resume-section-content {
   font-weight: bold;
 }
 
+.img-fluid-portfolio {
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 
