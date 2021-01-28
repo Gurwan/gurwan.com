@@ -10123,7 +10123,6 @@ section.resume-section .resume-section-content {
 .containerportfolio {
   position: relative;
   text-align: center;
-  color: black;
 }
 
 .img-fluid {
@@ -10146,6 +10145,14 @@ section.resume-section .resume-section-content {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.whitetext{
+  color:white;
+}
+
+.top-buffer { 
+  margin-top:20px; 
 }
 
 
