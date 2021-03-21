@@ -7608,7 +7608,15 @@ button.bg-dark:focus {
   margin-right: 3rem !important;
 }
 
-.mb-5,
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.englisha {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-5 {
   margin-bottom: 3rem !important;
 }
