@@ -40,3 +40,13 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 10) {
+        $("#navmenu-id").addClass("darkbackground-nav");
+      } else {
+        $("#navmenu-id").removeClass("darkbackground-nav");
+      }
+    });
+  });
