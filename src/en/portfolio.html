@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Étudiant ingénieur en Informatique"> 
+        <meta name="author" content="Gurwan Delaunay" />
+        <title>Gurwan</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/portfolio.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="navbar-menu" id="navmenu-id">
+            <a class="navbar-menu-logo" href="index.html"><img class="navbar-menu-logo-image" src="../assets/img/logo.png"></img></a>
+            <a href="../portfolio.html"><img src="https://media.flaticon.com/dist/min/img/flags/fr.svg" width="16" height="11" loading="lazy"></a>
+        </div>
+
+        <h1>Portfolio</h1>
+
+        <div class="row">
+            <div id="divsoundboxfrance" class="category1"><p>Soundbox France</p><span>Mobile app | Java - Android</span></div>
+            <div id="divroazhonstats" class="category2"><p>Roazhon Stats</p><span>Web application | PHP - Symfony</span></div>
+            <div id="divknowyourworld" class="category3"><p>Know Your World</p><span>Web application | Javascript - React</span></div>
+            <div id="divresolutionheld" class="category4"><p>Resolution Held</p><span>Mobile app | Kotlin - Android</span></div>
+            <div id="divzeninitie" class="category5"><p>Zen l'Initié</p><span>Boarding game | Java - Swing</span></div>
+            <div id="divmore" class="category6"><p>See more..</p><span>More projects available on my Github</span></div>
+            <script>
+                document.getElementById("divsoundboxfrance").onclick = function(){
+                    document.getElementById("soundboxfrance").style.display = "block";
+                    document.getElementById("roazhonstats").style.display = "none";
+                    document.getElementById("knowyourworld").style.display = "none";
+                    document.getElementById("resolutionheld").style.display = "none";
+                    document.getElementById("zenlinitie").style.display = "none";
+                }
+                document.getElementById("divroazhonstats").onclick = function(){
+                    document.getElementById("soundboxfrance").style.display = "none";
+                    document.getElementById("roazhonstats").style.display = "block";
+                    document.getElementById("knowyourworld").style.display = "none";
+                    document.getElementById("resolutionheld").style.display = "none";
+                    document.getElementById("zenlinitie").style.display = "none";
+                }
+                document.getElementById("divknowyourworld").onclick = function(){
+                    document.getElementById("soundboxfrance").style.display = "none";
+                    document.getElementById("roazhonstats").style.display = "none";
+                    document.getElementById("knowyourworld").style.display = "block";
+                    document.getElementById("resolutionheld").style.display = "none";
+                    document.getElementById("zenlinitie").style.display = "none";
+                }
+                document.getElementById("divresolutionheld").onclick = function(){
+                    document.getElementById("soundboxfrance").style.display = "none";
+                    document.getElementById("roazhonstats").style.display = "none";
+                    document.getElementById("knowyourworld").style.display = "none";
+                    document.getElementById("resolutionheld").style.display = "block";
+                    document.getElementById("zenlinitie").style.display = "none";
+                }
+                document.getElementById("divzeninitie").onclick = function(){
+                    document.getElementById("soundboxfrance").style.display = "none";
+                    document.getElementById("roazhonstats").style.display = "none";
+                    document.getElementById("knowyourworld").style.display = "none";
+                    document.getElementById("resolutionheld").style.display = "none";
+                    document.getElementById("zenlinitie").style.display = "block";
+                }
+                document.getElementById("divmore").onclick = function(){
+                    window.location.href = "https://github.com/Gurwan?tab=repositories";
+                }
+            </script>
+        </div>
+
+        <div class="projectdiv" id="soundboxfrance">
+            <h2>Soundbox France</h2>
+            <h3>Personal project | October 2017 - May 2021</h3>
+            <h3>Application created in Java on Android Studio with AndroidX and SQLite libraries</h3>
+            <p>This project is my first programming project and I partially learned to code with this project. Of course the project being more than three years old, I improved it as I progressed in the field. The primary objective of this project was to put it into production, so Soundbox France has been available since autumn 2017 on the Google Play Store platform. The application has had some success with in particular 380,000 unique users having downloaded the application. This project allowed me to discover a large part of the phases of creating a mobile application.</p>
+            <div class = "link_portfolio">
+                Link to the <a href="https://play.google.com/store/apps/details?id=automation.test.soundboxfrance"> Play Store </a> and to the <a href="https: / /github.com/Gurwan/SoundboxFrance">Github</a>.
+            </div>
+     
+            <h3> Project images </h3>
+            <div class="rowimg">
+                <div class="columnimg">
+                    <img src="assets/img/soundboxfrance_5.jpg" alt="Écran d'accueil"/>
+                </div>
+                <div class="columnimg">
+                    <img src="../assets/img/soundboxfrance_4.jpg" alt="Catégorie"/>
+                </div>
+                <div class="columnimg">
+                    <img src="../assets/img/soundboxfrance_2.jpg" alt="Soundbox customisable"/>
+                </div>
+                <div class="columnimg">
+                    <img src="../assets/img/soundboxfrance_1.jpg" alt="Rechercher un son"/>
+                </div>
+                <div class="columnimg">
+                    <img src="../assets/img/soundboxfrance_3.jpg" alt="Coup de coeur"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectdiv" id="roazhonstats">
+            <h2>Roazhon Stats</h2>
+            <h3>Personal project | December 2020 -...</h3>
+            <h3>Application created in PHP with the Symfony framework, notably using cURL and DOMDocument</h3>
+            <p>With the objective of better mastering the PHP Symfony framework, I decided to carry out a project allowing me to progress effectively. For this first project with Symfony, I chose to develop a small project allowing me to discover interfaces like cURL and DOM and allowing me to work on a pleasant project to achieve. I therefore chose to create a site bringing together some statistics on Stade Rennais Football Club players. The script retrieving the data is doing web scraping on the Sofascore and Wikipedia sites and especially for this reason, the site did not go into production but also because the objective is only educational.</p>
+            <div class = "link_portfolio">
+                Link to the <a href="https://github.com/Gurwan/RoazhonStats"> Github </a>.
+            </div>
+            <h3>Project images</h3>
+            <div>
+                <div>
+                    <img class="imgresponsive" src="../assets/img/mainscreenroazhonstats.png" alt="Écran d'accueil"/>
+                </div>
+                <br>
+                <div>
+                    <img class="imgresponsive" src="../assets/img/playerviewroazhonstats.png" alt="Vue d'un joueur"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectdiv" id="knowyourworld">
+            <h2>Know Your World</h2>
+            <h3>Personal project | January 2021 -...</h3>
+            <h3>Web application created in Javascript with in particular the ReactJS library</h3>
+            <p>The idea of the project is to create a website bringing together different games linking memory and general culture. The project is still under development and for the moment gathers only one game. In its final version, the site will allow to have a user account with which we can keep our scores on each game offered by the platform. The first game is called "Countries Game" (see images of the project) and the goal is to find all the countries of the world taking as little time as possible and of course without cheating !</p>
+            <div class = "link_portfolio">
+                 Link to the <a href="https://github.com/Gurwan/KnowYourWorld"> Github</a>.
+            </div>
+            <h3>Project images</h3>
+            <div>
+                <div>
+                    <img class="imgresponsive" src="../assets/img/knowyourworld_1.png" alt="Countries Game"/>
+                </div>
+            </div>
+        </div>
+
+        <div class = "projectdiv" id = "resolutionheld">
+            <h2>Resolution Held</h2>
+            <h3>Personal project | December 2020 - January 2021</h3>
+            <h3>Application made in Kotlin with in particular the Gson library</h3>
+            <p>Every year, most people make a resolution list to improve their lives. However, the main difficulty of this custom is not to choose these resolutions but to keep them. To fix this problem: Resolution Held. This mobile application makes it possible to hold 2 resolutions throughout the year. Each day is represented by a circle which can be clicked on when the resolution is held. However, the objective is not over a year but over a month. Indeed, each resolution lasts a month. At the end of each month you will be able to restart the challenge, throughout the year.</p>
+            <div class = "link_portfolio">
+                Link to the <a href="https://github.com/Gurwan/ResolutionHeld"> Github</a>.
+            </div>
+            <h3>Project images</h3>
+            <div class = "rowimg">
+                <div class = "columnimg">
+                    <img src = "../assets/img/resolutionheld_1.jpg" alt = "Resolution 1" />
+                </div>
+                <div class = "columnimg">
+                    <img src="../assets/img/resolutionheld_2.jpg" alt = "Resolution 2" />
+                </div>
+            </div>
+        </div>
+
+        <div class="projectdiv" id="zenlinitie">
+            <h2>Zen l'Initié</h2>
+            <h3>IUT project | April 2020 - June 2020</h3>
+            <h3>Application created in Java with in particular the Swing graphics library</h3>
+            <p>This project is the summary project of my first year of DUT Informatique. The objective is to build an entire game using the Java language. The game is a digital adaptation of the board game Zen the Initiate. The goal of Zen the Initiate is to succeed in forming a continuous chain with all of his pawns still on the board. If the red pawn is still on the board then it must also be aligned with its pawns. The game can take place over several turns according to your choice. This computerized board game is built in a terminal version, but also in a graphical version with the Swing graphics library.</p>
+            <div class = "link_portfolio">
+                Link to the <a href="https://github.com/Gurwan/ZenInitie"> Github</a>.
+            </div>
+            <h3>Project images</h3>
+            <div>
+                <img class="imgresponsive" src="../assets/img/zeninitie_1.png" alt="Écran d'accueil"/>
+            </div>
+            <br>
+            <div>
+                <img class="imgresponsive" src="../assets/img/zeninitie_2.png" alt="Partie en cours"/>
+            </div>
+            <br>
+            <div>
+                <img class="imgresponsive" src="../assets/img/zeninitie_3.png" alt="Sauvegarde d'une partie"/>
+            </div>
+        </div>
+
+      
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
