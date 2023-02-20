@@ -174,3 +174,25 @@ h2 {
     background-color: #bd5d38;
   }
 
+#img-border {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#img-border img {
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#img-border img:hover {
+    transform:scale(1.5);
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+  
