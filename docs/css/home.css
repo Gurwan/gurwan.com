@@ -42,7 +42,11 @@ body {
     margin-left: 50px;
 }
 
-h1 {
+.h-year {
+    height: 20rem;
+}
+
+h1, h2 {
     color: white;
     font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 600;
@@ -53,13 +57,9 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    color: white;
-    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 1200;
-    font-size: 2rem;
-    margin-top: 0px;
-    text-align: center;
+.col {
+    border: white solid 2px;
+    margin: 0.5rem;
 }
 
 .social-icons {
@@ -68,94 +68,77 @@ h2 {
     align-items: center;
 }
 
-.row {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+p {
+    font-size: 1rem;
 }
 
-.row div {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    border-radius: 18px;
-    text-transform: uppercase;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-weight: 1200;
-}
 
-.category1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #7FDBFF;
-}
-
-.category2 {
-    background-color: #39CCCC;
-}
-
-.category3 {
-    background-color: #FFDC00;
-}
-
-.category4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    background-color: #FF851B;
-}
 
 @media (min-width: 380px) and (max-width: 600px) {
-    h1 {
+    h1, h2 {
         font-size: 60px;
     }
-    h2 {
-        font-size: 25px;
-    }
+
     .main-home-base {
         margin-left: 0;
         width: 100%;
     }
+
     .row div {
         font-size: 20px;
     }
 }
 
 @media (min-width: 300px) and (max-width: 380px) {
-    h1 {
+    h1, h2 {
         font-size: 40px;
     }
-    h2 {
-        font-size: 20px;
-    }
+
     .main-home-base {
         margin-left: 0;
         width: 100%;
     }
+
     .row div {
         font-size: 15px;
     }
 }
 
 @media (max-width: 300px) {
-    h1 {
+    h1, h2 {
         font-size: 30px;
     }
-    h2 {
-        font-size: 15px;
-    }
+
     .main-home-base {
         margin-left: 0;
         width: 100%;
     }
+
     .row div {
         font-size: 12px;
     }
 }
+
+.vertical-line {
+    position: absolute;
+    left: 49%;
+    top: 0%;
+    bottom: 10%;
+    border-left: 20px solid #000;
+    border-right: 20px solid red;
+    content: '';
+    height: 20rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .vertical-line {
+        left: 0;
+    }
+}
+
 .social-icon {
     display: inline-flex;
     align-items: center;
-    display: flex;
     justify-content: center;
     height: 3.5rem;
     width: 3.5rem;
@@ -164,35 +147,140 @@ h2 {
     border-radius: 100%;
     font-size: 1.5rem;
     left: 50%;
-    margin-right: -50%;
     margin-right: 1.5rem;
-  }
-  .social-icons .social-icon:last-child {
-    margin-right: 0;
-  }
-  .social-icons .social-icon:hover {
-    background-color: #bd5d38;
-  }
+}
 
-#img-border {
+.w-10r {
+    width: 30%;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.cloud {
+    animation: move 6s ease infinite;
+    border-radius: 50%;
+    background: #FFFFFF;
+    height: 120px;
+    width: 120px;
+    margin-right: 8rem;
+    box-shadow:
+            #FFFFFF 130px -30px 0 -1px,
+            #FFFFFF 50px -50px,
+            #FFFFFF 60px 20px,
+            #FFFFFF 120px 30px 0 -20px,
+            #FFFFFF 170px 10px 0 -10px;
+}
+
+@keyframes move{
+    50% { transform: translateY(-15px); }
+}
+
+.year {
+    position: absolute;
+    left: 42%;
+    top: 4%;
+    font-size: 5rem;
+}
+
+.w-10 {
+    width: 12%;
+}
+
+#img-profile {
     position: relative;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    background: url("../assets/img/index_test.png");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
-#img-border img {
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+#img-profile:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/img/index_test.png");
+    background-size: cover;
+    opacity: .5;
+    mix-blend-mode: hard-light;
+    animation: glitch2 10s linear infinite;
+    box-shadow: 6px 6px 6px black;
 }
 
-#img-border img:hover {
-    transform:scale(1.5);
-    margin-bottom: 35px;
-    margin-top: 25px;
+#img-profile:hover:before {
+    animation: bug 1s linear infinite;
+    box-shadow: 6px 6px 6px black;
 }
-  
+
+.formation-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@keyframes bug {
+    0% {
+        background-position: 0 0;
+        filter: hue-rotate(0deg);
+    }
+    10% {
+        background-position: 5px 0;
+    }
+    20% {
+        background-position: -5px 0;
+    }
+    30% {
+        background-position: 15px 0;
+    }
+    40% {
+        background-position: -5px 0;
+    }
+    50% {
+        background-position: -25px 0;
+    }
+    60% {
+        background-position: -50px 0;
+    }
+    70% {
+        background-position: 0 -20px;
+    }
+    80% {
+        background-position: -60px -20px;
+    }
+    81% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 0;
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes bug {
+    0% {
+        background-position: 0 0;
+        filter: hue-rotate(0deg);
+    }
+    10% {
+        background-position: 15px 0;
+    }
+    15% {
+        background-position: -15px 0;
+    }
+    20% {
+        filter: hue-rotate(360deg);
+    }
+    25% {
+        background-position: 0 0;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        background-position: 0 0;
+        filter: hue-rotate(0deg);
+    }
+}
+
