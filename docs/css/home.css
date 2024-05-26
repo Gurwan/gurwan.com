@@ -173,6 +173,28 @@ p {
             #FFFFFF 170px 10px 0 -10px;
 }
 
+@media screen and (max-width:1000px) {
+    .cloud {
+        animation: none!important;
+        box-shadow: none;
+        background: none;
+    }
+
+    .year {
+        color: white!important;
+        position: relative!important;
+    }
+    
+    .left-elem {
+        margin-top: 10rem!important;
+        margin-bottom: 10rem!important;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
+
 @keyframes move{
     50% { transform: translateY(-15px); }
 }
