@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gurwan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="language.js"></script>
+</head>
+<body>
+<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu is-active">
+        <div class="navbar-start mt-2">
+            <h1 class="title is-4 ml-2">
+                Gurwan Delaunay
+            </h1>
+        </div>
+        <div class="navbar-end mt-2">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a id="fr-button" class="button is-light" onclick="setLanguage('fr')">
+                            <span class="icon">
+                                <img src="./assets/french_flag.png" alt="Français">
+                            </span>
+                        <span>Français</span>
+                    </a>
+
+                    <a id="bzh-button" class="button is-light" onclick="setLanguage('bzh')">
+                            <span class="icon">
+                                <img src="./assets/breizh_flag.svg" alt="Brezhoneg">
+                            </span>
+                        <span>Brezhoneg</span>
+                    </a>
+
+                    <a id="en-button" class="button is-light" onclick="setLanguage('en')">
+                            <span class="icon">
+                                <img src="./assets/english_flag.png" alt="English">
+                            </span>
+                        <span>English</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="section">
+    <div class="container">
+        <h2 data-i18n="title_job" class="title is-1 has-text-centered"></h2>
+        <div class="columns is-flex is-centered my-4">
+            <div class="zoom-container my-2">
+                <figure class="image is-128x128">
+                    <img class="is-rounded" src="assets/gurwan.png"/>
+                </figure>
+            </div>
+        </div>
+        <div class="columns is-flex is-centered mt-5">
+            <p class="buttons">
+                <button class="button is-link" onclick="redirectTo('https://github.com/Gurwan')">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </button>
+                <button class="button is-info" onclick="redirectTo('https://www.linkedin.com/in/gurwandelaunay')">
+                    <span class="icon">
+                      <i class="fab fa-linkedin"></i>
+                    </span>
+                    <span>Linkedin</span>
+                </button>
+                <button class="button is-danger" onclick="redirectTo('https://www.malt.fr/profile/gurwandln')">
+                    <span class="icon">
+                      <i class="fa-solid fa-file-contract"></i>
+                    </span>
+                    <span>Malt</span>
+                </button>
+                <button class="button is-warning" onclick="redirectTo('mailto:gurwandelaunay35@gmail.com')">
+                    <span class="icon">
+                      <i class="fa-regular fa-paper-plane"></i>
+                    </span>
+                    <span data-i18n="contact_me"></span>
+                </button>
+        </div>
+        <div class="columns is-flex is-centered mt-5">
+            <p data-i18n="presentation-1" class="is-size-5 small-presentation has-text-justified"></p>
+        </div>
+        <div class="columns is-flex is-centered">
+            <p data-i18n="presentation-2" class="is-size-5 small-presentation has-text-justified"></p>
+        </div>
+    </div>
+</section>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <p data-i18n="section-t1" class="title"></p>
+    </div>
+</section>
+
+<div class="block mt-3 p-5">
+    <section class="section">
+        <div class="container">
+            <h1 data-i18n="competences-t1" class="title is-4"></h1>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-html5 fa-2x"></i>
+                        <h3 class="title mt-3 is-5">HTML5</h3>
+                        <progress class="progress is-info" value="100" max="100">100%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                        <h3 class="title mt-3 is-5">CSS3</h3>
+                        <progress class="progress is-info" value="99" max="100">99%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-js-square fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Javascript</h3>
+                        <progress class="progress is-info" value="95" max="100">95%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-java fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Java</h3>
+                        <progress class="progress is-info" value="92" max="100">92%</progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-python fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Python</h3>
+                        <progress class="progress is-info" value="70" max="100">70%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-php fa-2x"></i>
+                        <h3 class="title mt-3 is-5">PHP</h3>
+                        <progress class="progress is-info" value="75" max="100">75%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-react fa-2x"></i>
+                        <h3 class="title mt-3 is-5">React</h3>
+                        <progress class="progress is-info" value="50" max="100">50%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-node-js fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Java</h3>
+                        <progress class="progress is-info" value="85" max="100">85%</progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-npm fa-2x"></i>
+                        <h3 class="title mt-3 is-5">NPM</h3>
+                        <progress class="progress is-info" value="100" max="100">100%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Symfony</h3>
+                        <progress class="progress is-info" value="80" max="100">80%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-brands fa-vuejs fa-2x"></i>
+                        <h3 class="title mt-3 is-5">VueJS</h3>
+                        <progress class="progress is-info" value="70" max="100">70%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fa-brands fa-angular fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Angular</h3>
+                        <progress class="progress is-info" value="90" max="100">90%</progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 data-i18n="competences-t2" class="title is-4"></h1>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-java fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Java</h3>
+                        <progress class="progress is-info" value="85" max="100">85%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-android fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Android</h3>
+                        <progress class="progress is-info" value="75" max="100">75%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-google-play fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Google Play Store</h3>
+                        <progress class="progress is-info" value="95" max="100">95%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/900px-Kotlin_Icon.png"
+                             alt="kotlin_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">Kotlin</h3>
+                        <progress class="progress is-info" value="40" max="100">40%</progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fa-brands fa-apple fa-2x"></i>
+                        <h3 class="title mt-3 is-5">iOS</h3>
+                        <progress class="progress is-info" value="70" max="100">70%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Xcode_14_icon.png" alt="kotlin_icon"
+                             class="img-icon">
+                        <h3 class="title mt-3 is-5">XCode</h3>
+                        <progress class="progress is-info" value="75" max="100">75%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fa-brands fa-swift fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Swift</h3>
+                        <progress class="progress is-info" value="85" max="100">85%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fa-brands fa-uikit fa-2x"></i>
+                        <h3 class="title mt-3 is-5">UIKit</h3>
+                        <progress class="progress is-info" value="80" max="100">80%</progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 data-i18n="competences-t3" class="title is-4"></h1>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png?20201023095457"
+                             alt="c_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">C</h3>
+                        <progress class="progress is-info" value="35" max="100">35%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png?20170928190710"
+                             alt="c++_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">C++</h3>
+                        <progress class="progress is-info" value="45" max="100">45%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/256px-Logo_C_sharp.svg.png?20221121173824"
+                             alt="c#_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">C#</h3>
+                        <progress class="progress is-info" value="65" max="100">65%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://cdn.worldvectorlogo.com/logos/unity-69.svg"
+                             alt="unity_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">Unity</h3>
+                        <progress class="progress is-info" value="35" max="100">35%</progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 data-i18n="competences-t4" class="title is-4"></h1>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-git fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Git</h3>
+                        <progress class="progress is-info" value="95" max="100">95%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-gitlab fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Gitlab</h3>
+                        <progress class="progress is-info" value="80" max="100">80%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <i class="fab fa-github fa-2x"></i>
+                        <h3 class="title mt-3 is-5">Github</h3>
+                        <progress class="progress is-info" value="95" max="100">95%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png?20200616073617"
+                             alt="photoshop_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">Photoshop</h3>
+                        <progress class="progress is-info" value="50" max="100">50%</progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Overleaf_Logo.svg/600px-Overleaf_Logo.svg.png?20230114191046"
+                             alt="overleaf_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">Latex (Overleaf)</h3>
+                        <progress class="progress is-info" value="80" max="100">80%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Audacity_Logo.svg/1200px-Audacity_Logo.svg.png"
+                             alt="audacity_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">Audacity</h3>
+                        <progress class="progress is-info" value="45" max="100">45%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://static-00.iconduck.com/assets.00/apps-camtasia-studio-icon-2048x2048-ove7wqv8.png"
+                             alt="camtasia_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">Camtasia Studio</h3>
+                        <progress class="progress is-info" value="85" max="100">85%</progress>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box has-text-centered">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png?20220821125247"
+                             alt="canva_icon" class="img-icon">
+                        <h3 class="title mt-3 is-5">Canva</h3>
+                        <progress class="progress is-info" value="90" max="100">90%</progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="hero is-info">
+    <div class="hero-body">
+        <p data-i18n="section-t2" class="title"></p>
+    </div>
+</section>
+<div class="columns p-3">
+    <div class="column">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img
+                            src="assets/letseat_big_logo.png"
+                            alt="LETSEAT logo"
+                    />
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">LETSEAT</p>
+                        <p class="subtitle is-6"><a
+                                href="https://www.linkedin.com/company/letseat-france"
+                                target="_blank">@LETSEAT</a><br><i class="mt-4 mr-1 fa-solid fa-location-dot"></i>
+                            Limoges (87)</p>
+
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p data-i18n="letseat-1"></p>
+                    <p data-i18n="letseat-2"></p>
+                    <div class="mt-2 mb-2"><i class="p-1 fab fa-symfony fa-2x"></i> <i class="p-1 fab fa-git fa-2x"></i><i
+                            class="p-1 fab fa-github fa-2x"></i><i class="p-1 fab fa-bootstrap fa-2x"></i></div>
+                    <time data-i18n="letseat-date"></time>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img
+                            src="assets/logsytech_big_logo.png"
+                            alt="Logsytech logo"
+                    />
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">Logsytech</p>
+                        <p class="subtitle is-6"><a
+                                href="https://www.logsytech.fr/" target="_blank">@Logsytech</a><br><i
+                                class="mt-4 mr-1 fa-solid fa-location-dot"></i> Lieusaint (77)</p>
+
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p data-i18n="logsys-1"></p>
+                    <p data-i18n="logsys-2"></p>
+                    <div class="mt-2 mb-2"><i class="fab fa-node-js fa-2x"></i> <i class="p-1 fab fa-git fa-2x"></i><i
+                            class="p-1 fab fa-gitlab fa-2x"></i><i class="p-1 fa-brands fa-vuejs fa-2x"></i></div>
+                    <time data-i18n="logsys-date"></time>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img
+                            src="assets/scalian_big_logo.png"
+                            alt="Scalian logo"
+                    />
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">Scalian</p>
+                        <p class="subtitle is-6"><a
+                                href="https://www.scalian.com/" target="_blank">@Scalian</a><br><i
+                                class="mt-4 mr-1 fa-solid fa-location-dot"></i> Rennes (35)</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <p data-i18n="scalian-1"></p>
+                    <p data-i18n="scalian-2"></p>
+                    <div class="mt-2 mb-2"><i class="p-1 fa-brands fa-angular fa-2x"></i> <i
+                            class="p-1 fab fa-git fa-2x"></i><i
+                            class="p-1 fab fa-gitlab fa-2x"></i><i class="p-1 fa-brands fa-apple fa-2x"></i><i
+                            class="p-1 fa-brands fa-android fa-2x"></i></div>
+                    <time data-i18n="scalian-date"></time>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="hero is-warning">
+    <div class="hero-body">
+        <p data-i18n="section-t3" class="title"></p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <img class="logo mb-5" src="assets/iut_vannes_big_logo.png">
+                    <h3 class="title is-5">IUT Vannes</h3>
+                    <h4 data-i18n="iut-date" class="subtitle is-6"></h4>
+                    <p data-i18n="iut-description" class="mb-2"></p>
+                    <a class="link" href="https://www.iutvannes.fr/" target="_blank">
+                        <span class="tag is-link is-light is-medium">https://www.iutvannes.fr/</span>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img class="logo mb-5" src="assets/enssat_big_logo.png">
+                    <h3 class="title is-5">ENSSAT</h3>
+                    <h4 data-i18n="enssat-date" class="subtitle is-6"></h4>
+                    <p data-i18n="enssat-description" class="mb-2"></p>
+                    <a class="link" href="https://www.enssat.fr/" target="_blank">
+                        <span class="tag is-link is-light is-medium">https://www.enssat.fr/</span>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img class="logo mb-5" src="assets/tudublin_big_logo.png">
+                    <h3 class="title is-5">TU Dublin</h3>
+                    <h4 data-i18n="tudublin-date" class="subtitle is-6"></h4>
+                    <p data-i18n="tudublin-description" class="mb-2"></p>
+                    <a class="link" href="https://www.tudublin.ie/" target="_blank">
+                        <span class="tag is-link is-light is-medium">https://www.tudublin.ie/</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-danger">
+    <div class="hero-body">
+        <p data-i18n="section-t4" class="title"></p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header-title is-flex is-flex-direction-column is-align-items-center">
+                        <p class="title is-4">Soundbox France</p>
+                        <p class="subtitle is-6">Application mobile | Java - Android</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p>Projet personnel | Octobre 2017 - Mai 2021</p>
+                            <p>Application réalisée en Java sur Android Studio avec les bibliothèques AndroidX et SQLite.</p>
+                            <p>Ce projet est mon premier projet de programmation et j'ai en partie appris à coder avec ce projet. Bien entendu le projet ayant plus de trois ans, je l'ai amélioré au fur et à mesure de ma progression dans le domaine. L'objectif premier de ce projet était de le mettre en production, Soundbox France est donc disponible depuis l'automne 2017 sur la plateforme Google Play Store. L'application a connu un certain succès avec notamment 380 000 utilisateurs uniques ayant téléchargé l'application. Ce projet m'a permis de découvrir une grande partie des phases de création d'une application mobile.</p>
+                            <div class="link_portfolio">
+                                Lien vers le <a href="https://play.google.com/store/apps/details?id=automation.test.soundboxfrance">Play Store</a> et vers le <a href="https://github.com/Gurwan/SoundboxFrance">Github</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header-title is-flex is-flex-direction-column is-align-items-center">
+                        <p class="title is-4">WhySoFar</p>
+                        <p class="subtitle is-6">Extension web | Javascript - Chrome</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p>Projet entrepreneurial | Octobre 2022 - Mars 2023</p>
+                            <p>Extension web réalisée en Javascript pour Google Chrome.</p>
+                            <p>L'extension web WhySoFar permet l'affichage d'un indicateur écologique sur la page des produits des grands sites e-commerce tel que Amazon, CDiscount, Fnac et Boulanger.</p>
+                            <p>Ce projet a été développé pour le challenge entrepreneurial Fabrik ta pépite (organisé par Pépite Bretagne) édition 2023. </p>
+                            <p>WhySoFar est le lauréat du prix du campus de Lannion et a été nommé dans les catégories suivantes :
+                            <ul>
+                                <li style="list-style-type: none;">
+                                    Prix de la meilleure vidéo
+                                </li>
+                                <li style="list-style-type: none;">
+                                    Prix du meilleur prototype numérique
+                                </li>
+                                <li style="list-style-type: none;">
+                                    Prix du campus de Lannion
+                                </li>
+                            </ul>
+                            </p>
+                            <div class="link_portfolio">
+                                Lien vers le <a href="https://github.com/Gurwan/WhySoFar">Github</a>.
+                            </div>                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carte 3 -->
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header-title is-flex is-flex-direction-column is-align-items-center">
+                        <p class="title is-4">Know Your World</p>
+                        <p class="subtitle is-6">Application web | Javascript - React</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p>Projet personnel | Janvier 2021-Avril 2021</p>
+                            <p>Application web réalisée en Javascript avec notamment la bibliothèque ReactJS.</p>
+                            <p>L'idée du projet est de créer un site web regroupant différents jeux liant la mémoire et la culture générale. Le projet est encore en cours de développement et ne regroupe pour le moment qu'un seul jeu. Dans sa version finale, le site permettra d'avoir un compte utilisateur avec lequel nous pourrons conserver nos scores sur chaque jeu proposé par la plateforme. Le premier jeu s'appelle "Countries Game" (voir images du projet) et le but est de trouver tous les pays du globe en prenant le moins de temps possible et bien évidemment sans tricher !</p>
+                            <div class="link_portfolio">
+                                Lien vers le <a href="https://github.com/Gurwan/KnowYourWorld">Github</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carte 4 -->
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header-title is-flex is-flex-direction-column is-align-items-center">
+                        <p class="title is-4">Resolution Held</p>
+                        <p class="subtitle is-6">Application mobile | Kotlin - Android</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            Informations supplémentaires pour la carte 4.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carte 5 -->
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header-title is-flex is-flex-direction-column is-align-items-center">
+                        <p class="title is-4">Zen l'Initié</p>
+                        <p class="subtitle is-6">Jeu de plateforme | Java - Swing</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            Informations supplémentaires pour la carte 5.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carte 6 -->
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header-title is-flex is-flex-direction-column is-align-items-center">
+                        <p class="title is-4">Voir plus..</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            Plus de projets disponible sur mon Github.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-link">
+    <div class="hero-body">
+        <p data-i18n="section-t5" class="title"></p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <figure class="image is-5by3">
+                            <img src="assets/stade_rennais.jpg" alt="Stade Rennais">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4" data-i18n="football-title"></p>
+                        <p class="content" data-i18n="football-content"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <figure class="image is-5by3">
+                            <img src="assets/running.png" alt="Running">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4" data-i18n="running-title"></p>
+                        <p class="content" data-i18n="running-content"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <figure class="image is-5by3">
+                            <img src="assets/la-vita-e-bella.png" alt="La vita e bella">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4" data-i18n="cinema-title"></p>
+                        <p class="content" data-i18n="cinema-content"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <figure class="image is-5by3">
+                            <img src="assets/tennis.jpg" alt="Tennis">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4" data-i18n="tennis-title"></p>
+                        <p class="content" data-i18n="tennis-content"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <figure class="image is-5by3">
+                            <img src="assets/litterature.jpg" alt="Litterature">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4" data-i18n="lecture-title"></p>
+                        <p class="content" data-i18n="lecture-content"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <figure class="image is-5by3">
+                            <img src="assets/breizh_flag.svg" alt="Drapeau breton">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4" data-i18n="breton-title"></p>
+                        <p class="content" data-i18n="breton-content"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-link">
+    <div class="hero-body">
+        <p data-i18n="section-t6" class="title"></p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline is-justify-content-center">
+            <div class="column is-12-mobile is-10-tablet is-8-desktop is-6-widescreen">
+                <form method="POST" action="https://formspree.io/f/manwjeod" class="box p-5">
+                    <label class="is-block mb-4">
+                        <input
+                                name="name"
+                                type="text"
+                                class="input"
+                                placeholder="Antoine Dupont"
+                                required
+                        />
+                    </label>
+
+                    <label class="is-block mb-4">
+                        <input
+                                required
+                                name="email"
+                                type="email"
+                                class="input"
+                                placeholder="antoine.dupont@example.com"
+                        />
+                    </label>
+
+                    <label class="is-block mb-4">
+                        <textarea
+                                name="message"
+                                class="textarea"
+                                rows="3"
+                                placeholder="Write your message here. Feel free to describe in detail what you would like to share or inquire about."
+                                required
+                        ></textarea>
+                    </label>
+
+                    <div class="mb-4">
+                        <button type="submit" class="button is-link px-4" data-i18n="send-msg"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

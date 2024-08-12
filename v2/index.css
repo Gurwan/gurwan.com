@@ -1,0 +1,60 @@
+.zoom-container figure {
+    width: 128px;
+    height: 128px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.zoom-container:hover figure {
+    width: 200px;
+    height: 200px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.small-presentation {
+    width: 60%;
+}
+
+.img-icon {
+    width: 2em;
+    height: 2em;
+    filter: grayscale(100%);
+}
+
+.card-content {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card-content.hidden-info {
+    display: none;
+}
+
+.card:hover .card-content.hidden-info {
+    display: block;
+}
+
+.card-header-title,
+.card-header-subtitle {
+    text-align: center;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-content {
+    display: none;
+}
+
+.card:hover .card-content {
+    display: block;
+}
+
+.card:hover .card-header-title,
+.card:hover .card-header-subtitle {
+    display: none;
+}
