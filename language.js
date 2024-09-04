@@ -235,7 +235,7 @@ const languageData = {
         "section-t6": "Kit e darempred ganin",
         "football-title": "Mell-droad",
         "football-content": "N'eo ket nebeut a talent met kalonek, dreist-holl evit klubañ Breiz.",
-        "running-title": "Kourf",
+        "running-title": "Redek",
         "running-content": "Talentus, e kouchan kentañ am eus.",
         "tennis-title": "Tennis",
         "tennis-content": "Kreizdaouet gant ar sport gant ar bolan kelly, a-wezh all, n'em eus ket kendalc'het war ar c'hout.",
