@@ -14,26 +14,40 @@
     width: 60%;
 }
 
+.columns-experience {
+    @media screen and (min-width: 800px) {
+        gap: 2.5rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+hr { 
+    background-color: lightgray; 
+    height: 1px; 
+    border: 0; 
+}
+
 .img-icon {
     width: 2em;
     height: 2em;
     filter: grayscale(100%);
 }
 
-.card-content {
+.content {
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
 }
 
-.card:hover .card-content {
+.card:hover .content {
     opacity: 1;
 }
 
-.card-content.hidden-info {
+.content.hidden-info {
     display: none;
 }
 
-.card:hover .card-content.hidden-info {
+.card:hover .content.hidden-info {
     display: block;
 }
 
@@ -46,11 +60,11 @@
     height: 100%;
 }
 
-.card-content {
+.content {
     display: none;
 }
 
-.card:hover .card-content {
+.card:hover .content {
     display: block;
 }
 
