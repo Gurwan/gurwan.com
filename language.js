@@ -62,9 +62,9 @@ function redirectTo(url) {
 
 const languageData = {
     "en": {
-        "title_job": "Full-stack and Mobile Developer",
+        "title_job": "Full-stack web development engineer",
         "contact_me": "Contact me",
-        "presentation-1": "Holder of an engineering degree in computer science, I am specialized in full-stack web development and mobile development (Android and iOS).",
+        "presentation-1": "Holder of an engineering degree in computer science, I am specialized in full-stack web development development.",
         "presentation-2": "At 23 years old, I am a Digital Systems Engineer at Scalian Rennes.",
         "letseat-1": "Home meal delivery start-up in the Limousin french region.",
         "letseat-2": "I had the opportunity to work for LETSEAT through a 3-month internship, a 2-month fixed-term contract, and then as a freelancer for 8 months.",
@@ -76,8 +76,8 @@ const languageData = {
         "logsys-role": "Full-stack developer",
         "scalian-1": "Digital services french company.",
         "scalian-2": "After a six-month internship at the Rennes branch in the Digital Systems department, I signed a permanent employment contract as a digital systems engineer. I have the opportunity to work as a front-end web developer, as well as a mobile developer with iOS and Android technologies, giving me a dual role on this project.",
-        "scalian-date": "March 2024 - ...",
-        "scalian-role": "Front-end and mobile developer",
+        "scalian-date": "March 2024 - June 2025",
+        "scalian-role": "Front-end developer",
         "iut-date": "September 2019 - June 2021 | Vannes (France)",
         "iut-description": "Two-year technical degree in Computer Science.",
         "enssat-date": "September 2021 - August 2024 | Lannion (France)",
@@ -136,9 +136,9 @@ const languageData = {
         "description-see-more": "More projects available on my Github."
     },
     "fr": {
-        "title_job": "Développeur full-stack et mobile",
+        "title_job": "Ingénieur en développement web full-stack",
         "contact_me": "Me contacter",
-        "presentation-1": "Titulaire d'un diplôme d'ingénieur en spécialité informatique, je suis spécialisé dans le développement web full-stack et le développement mobile (Android et iOS).",
+        "presentation-1": "Titulaire d'un diplôme d'ingénieur en spécialité informatique, je suis spécialisé dans le développement web full-stack.",
         "presentation-2": "À 23 ans, je suis en poste chez Scalian Rennes en tant que Digital Systems Engineer.",
         "letseat-1": "Start-up de livraison de plats à domicile de la région du limousin.",
         "letseat-2": "J'ai eu l'occasion de travailler pour LETSEAT par le biais d'un stage de 3 mois, d'un CDD de 2 mois puis en freelance pendant 8 mois.",
@@ -150,8 +150,8 @@ const languageData = {
         "logsys-role": "Développeur web full-stack",
         "scalian-1": "Entreprise de services du numérique française.",
         "scalian-2": "Après un stage de six mois à l'agence de Rennes dans le département Digital Systems, j'ai signé un CDI en tant qu'ingénieur systèmes numériques. J'ai la chance de travailler en tant que développeur web front-end mais également en tant que développeur mobile iOS et Android, me donnant une double casquette sur ce projet.",
-        "scalian-date": "Mars 2024 - ...",
-        "scalian-role": "Développeur web & mobile",
+        "scalian-date": "Mars 2024 - Juin 2025",
+        "scalian-role": "Développeur web front-end",
         "iut-date": "Septembre 2019 - Juin 2021 | Vannes (France)",
         "iut-description": "Diplôme universitaire de technologie en Informatique.",
         "enssat-date": "Septembre 2021 - Août 2024 | Lannion (France)",
