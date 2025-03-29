@@ -9,39 +9,6 @@ async function setLanguage(lang) {
     await setLanguagePreference(lang);
     const langData = languageData[lang] || {};
     updateContent(langData);
-    changeButtons(lang);
-}
-
-function changeButtons(lang) {
-    let classActive = 'is-active'
-    let btnBzh = document.getElementById('bzh-button');
-    let btnEn = document.getElementById('en-button');
-    let btnFr = document.getElementById('fr-button');
-    switch (lang) {
-        case 'fr':
-            btnFr.classList.add(classActive);
-            hideButton(btnEn)
-            hideButton(btnBzh)
-            break;
-        case 'en':
-            btnEn.classList.add(classActive);
-            hideButton(btnFr)
-            hideButton(btnBzh)
-            break;
-        case 'bzh':
-            btnBzh.classList.add(classActive);
-            hideButton(btnFr)
-            hideButton(btnEn)
-            break;
-        default:
-            break;
-    }
-}
-
-function hideButton(classActive, button) {
-    if (button.classList.contains(classActive)) {
-        button.classList.remove(classActive);
-    }
 }
 
 function setLanguagePreference(lang) {
@@ -92,20 +59,7 @@ const languageData = {
         "section-t2": "Experience",
         "section-t3": "Education",
         "section-t4": "Projects",
-        "section-t5": "Hobbies",
         "section-t6": "Contact me",
-        "football-title": "Football",
-        "football-content": "Not very talented but passionate, especially about a Brittany club.",
-        "running-title": "Running",
-        "running-content": "More talented than in football, I regularly take part in races.",
-        "tennis-title": "Tennis",
-        "tennis-content": "Fascinated by the sport with the yellow ball, even though I don't play at all.",
-        "cinema-title": "Cinema",
-        "cinema-content": "A big movie fan, I'm trying to learn more about the world of film.",
-        "lecture-title": "Reading",
-        "lecture-content": "I love reading books and have been interested in them since I was young, especially the classics.",
-        "breton-title": "Breton",
-        "breton-content": "I'm learning Breton in my free time to help keep this beautiful Celtic language alive.",
         "send-msg": "Contact me",
         "subtitle-sf": "Mobile App | Java - Android",
         "date-sf": "Personal Project | October 2017 - May 2021",
@@ -166,20 +120,7 @@ const languageData = {
         "section-t2": "Expériences",
         "section-t3": "Formations",
         "section-t4": "Projets",
-        "section-t5": "Passions",
         "section-t6": "Contactez-moi",
-        "football-title": "Football",
-        "football-content": "Peu talentueux mais passionné notamment par un club breton.",
-        "running-title": "Course à pied",
-        "running-content": "Talentueux (plus qu'au foot en tout cas), je participe régulièrement à des courses.",
-        "tennis-title": "Tennis",
-        "tennis-content": "Fasciné par le sport à la balle jaune malgré mon absence totale de pratique sur le court.",
-        "cinema-title": "Cinéma",
-        "cinema-content": "Grand consommateur de films, j'essaye de parfaire ma culture du septième art.",
-        "lecture-title": "Lecture",
-        "lecture-content": "Grand dévoreur de livres depuis mon plus jeune âge, je m'intéresse particulèrement aux classiques.",
-        "breton-title": "Breton",
-        "breton-content": "J'apprend le breton sur mon temps libre afin d'éviter la disparition de cette belle langue celtique.",
         "send-msg": "Envoyer le message",
         "subtitle-sf": "Application mobile | Java - Android",
         "date-sf": "Projet personnel | Octobre 2017 - Mai 2021",
@@ -240,20 +181,7 @@ const languageData = {
         "section-t2": "Bec'hadoù",
         "section-t3": "Studiadennoù",
         "section-t4": "Raktresoù",
-        "section-t5": "Plijadurezhioù",
         "section-t6": "Kit e darempred ganin",
-        "football-title": "Mell-droad",
-        "football-content": "N'eo ket nebeut a talent met kalonek, dreist-holl evit klubañ Breiz.",
-        "running-title": "Redek",
-        "running-content": "Talentus, e kouchan kentañ am eus.",
-        "tennis-title": "Tennis",
-        "tennis-content": "Kreizdaouet gant ar sport gant ar bolan kelly, a-wezh all, n'em eus ket kendalc'het war ar c'hout.",
-        "cinema-title": "Sinema",
-        "cinema-content": "Un den-brezel films, e ouestl am eus da sevel ma filez en ar sinema.",
-        "lecture-title": "Lenn",
-        "lecture-content": "Ur c'hrenvader-livroù a zo bet abaoe ma oad berr, hag e'm eus pouez bras war ar c'hlasikoù.",
-        "breton-title": "Brezhoneg",
-        "breton-content": "O plijout da zeskiñ brezhoneg e ma amzer framm da sikour da sevel ar yezh wel e brezhoneg.",
         "send-msg": "Kas an mesaj",
         "subtitle-sf": "Applikation mubil | Java - Android",
         "date-sf": "Ragojed personel | Eost 2017 - Mei 2021",

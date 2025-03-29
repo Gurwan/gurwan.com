@@ -72,11 +72,3 @@ hr {
 .card:hover .card-header-subtitle {
     display: none;
 }
-
-#hobbits_title {
-    display: none;
-}
-
-#hobbits_content {
-    display: none;
-}

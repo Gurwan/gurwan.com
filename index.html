@@ -5,7 +5,92 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gurwan</title>
+
+    <title>Gurwan DELAUNAY - Ingénieur web</title>
+    <meta name="description" content="Découvrez le portfolio et les compétences de Gurwan Delaunay, ingénieur informatique spécialisé en développement web full-stack.">
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Gurwan Delaunay",
+          "url": "https://www.gurwan.com",
+          "jobTitle": "Développeur web full stack",
+          "nationality": "French",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Scalian"
+          },
+          "alumniOf": [
+                {
+                "@type": "EducationalOrganization",
+                "name": "ENSSAT",
+                "url": "https://www.enssat.fr/"
+                },
+                {
+                "@type": "EducationalOrganization",
+                "name": "IUT Vannes",
+                "url": "https://www.iutvannes.fr/"
+                },
+                {
+                "@type": "EducationalOrganization",
+                "name": "TU Dublin",
+                "url": "https://www.tudublin.ie/"
+                }
+            ],
+          "sameAs": [
+            "https://github.com/Gurwan",
+            "https://www.linkedin.com/in/gurwandelaunay",
+            "https://www.malt.fr/profile/gurwandln"
+          ],
+          "knowsAbout": [
+            "Développement web full stack",
+            "TypeScript",
+            "Java",
+            "Python",
+            "PHP",
+            "C#",
+            "Node.js",
+            "Django",
+            "Spring Boot",
+            "Symfony",
+            "Angular",
+            "React",
+            "Vue.js"
+          ],
+          "hasPart": [
+                {
+                    "@type": "CreativeWork",
+                    "name": "Soundbox France",
+                    "description": "Application Android développée en Java avec AndroidX et SQLite, disponible sur le Play Store depuis 2017. Premier projet personnel, elle a évolué au fil des années et atteint plus de 420 000 téléchargements. Cette expérience m’a permis de maîtriser l’ensemble du processus de création d’une application mobile.",
+                    "url": "https://play.google.com/store/apps/details?id=automation.test.soundboxfrance",
+                    "image": "https://github.com/Gurwan/Soundbox_France/blob/main/app/src/main/ic_launcher-playstore.png?raw=true"
+                    "sameAs": "https://github.com/Gurwan/Soundbox_France"
+                },
+                {
+                    "@type": "CreativeWork",
+                    "name": "Tri Ger",
+                    "description": "Application Android en Kotlin avec Jetpack Compose, conçue pour faciliter l’apprentissage du breton. Chaque jour, elle propose trois nouveaux mots à découvrir, accompagnés de quiz interactifs et d’un suivi des progrès. Disponible hors ligne, elle offre une expérience fluide et minimaliste pour apprendre à son rythme.",
+                    "url": "https://play.google.com/store/apps/details?id=com.okariastudio.triger",
+                    "image": "https://raw.githubusercontent.com/Gurwan/TriGer/refs/heads/master/app/src/main/res/mipmap/ic_icon_splash.png"
+                    "sameAs": "https://github.com/Gurwan/TriGer"
+                } ,
+                {
+                    "@type": "CreativeWork",
+                    "name": "Listenerd",
+                    "description": "Application web développée en JavaScript avec Vue.js, permettant de suivre ses albums et artistes favoris. Utilisant l'API Web de Spotify pour récupérer les données musicales, Listenerd permet de rester informé des dernières sorties. Les informations des utilisateurs sont stockées dans une base de données MongoDB.",
+                    "url": "https://github.com/Gurwan/Listenerd",
+                },
+                {
+                    "@type": "CreativeWork",
+                    "name": "WhySoFar",
+                    "description": "Extension web permettant d'afficher un indicateur écologique sur les pages de produits des grands sites e-commerce tels qu'Amazon, CDiscount, Fnac et Boulanger. Développée pour le challenge entrepreneurial 'Fabrik ta pépite' (Pépite Bretagne 2023), WhySoFar a remporté le prix du campus de Lannion.",
+                    "url": "https://github.com/Gurwan/WhySoFar",
+                }
+            ]
+        }
+        </script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
@@ -25,7 +110,7 @@
                 <div class="buttons">
                     <a id="fr-button" class="button is-light" onclick="setLanguage('fr')">
                             <span class="icon">
-                                <img src="./assets/french_flag.png" alt="Français">
+                                <img src="./assets/french_flag.png" alt="Langue française">
                             </span>
                         <span>Français</span>
                     </a>
@@ -39,7 +124,7 @@
 
                     <a id="en-button" class="button is-light" onclick="setLanguage('en')">
                             <span class="icon">
-                                <img src="./assets/english_flag.png" alt="English">
+                                <img src="./assets/english_flag.png" alt="English language">
                             </span>
                         <span>English</span>
                     </a>
@@ -54,7 +139,7 @@
         <div id="picture_profile" class="columns is-flex is-centered my-4">
             <div class="zoom-container my-2">
                 <figure class="image is-128x128">
-                    <img class="is-rounded" src="assets/gurwan.png"/>
+                    <img class="is-rounded" alt="" src="assets/gurwan.png"/>
                 </figure>
             </div>
         </div>
@@ -102,7 +187,7 @@
 <div class="block mt-3 p-5">
     <section class="section">
         <div class="container">
-            <h1 data-i18n="competences-t1" class="title is-4"></h1>
+            <h2 data-i18n="competences-t1" class="title is-4"></h2>
             <div class="columns is-multiline">
                 <div class="column is-one-fifth">
                     <div class="box has-text-centered">
@@ -134,7 +219,7 @@
     </section>
     <section class="section">
         <div class="container">
-            <h1 data-i18n="competences-t2" class="title is-4"></h1>
+            <h2 data-i18n="competences-t2" class="title is-4"></h2>
             <div class="columns is-multiline">
                 <div class="column is-one-quarter">
                     <div class="box has-text-centered">
@@ -161,7 +246,7 @@
     </section>
     <section class="section">
         <div class="container">
-            <h1 data-i18n="competences-t3" class="title is-4"></h1>
+            <h2 data-i18n="competences-t3" class="title is-4"></h2>
             <div class="columns is-multiline">
                 <div class="column is-one-third">
                     <div class="box has-text-centered">
@@ -184,7 +269,7 @@
     </section>
     <section class="section">
         <div class="container">
-            <h1 data-i18n="competences-t4" class="title is-4"></h1>
+            <h2 data-i18n="competences-t4" class="title is-4"></h2>
             <div class="columns is-multiline">
                 <div class="column is-one-third">
                     <div class="box has-text-centered">
@@ -237,7 +322,7 @@
                 <figure class="image is-16by9">
                     <img
                             src="assets/letseat_big_logo.png"
-                            alt="LETSEAT logo"
+                            alt=""
                     />
                 </figure>
             </div>
@@ -272,7 +357,7 @@
                 <figure class="image is-16by9">
                     <img
                             src="assets/logsytech_big_logo.png"
-                            alt="Logsytech logo"
+                            alt=""
                     />
                 </figure>
             </div>
@@ -305,7 +390,7 @@
                 <figure class="image is-16by9">
                     <img
                             src="assets/scalian_big_logo.png"
-                            alt="Scalian logo"
+                            alt=""
                     />
                 </figure>
             </div>
@@ -347,7 +432,7 @@
         <div class="columns">
             <div class="column">
                 <div class="box">
-                    <img class="logo mb-5" src="assets/iut_vannes_big_logo.png">
+                    <img alt="" class="logo mb-5" src="assets/iut_vannes_big_logo.png">
                     <h3 class="title is-5">IUT Vannes</h3>
                     <h4 data-i18n="iut-date" class="subtitle is-6"></h4>
                     <p data-i18n="iut-description" class="mb-2 has-text-weight-semibold"></p>
@@ -358,7 +443,7 @@
             </div>
             <div class="column">
                 <div class="box">
-                    <img class="logo mb-5" src="assets/enssat_big_logo.png">
+                    <img alt="" class="logo mb-5" src="assets/enssat_big_logo.png">
                     <h3 class="title is-5">ENSSAT</h3>
                     <h4 data-i18n="enssat-date" class="subtitle is-6"></h4>
                     <p data-i18n="enssat-description" class="mb-2 has-text-weight-semibold"></p>
@@ -369,7 +454,7 @@
             </div>
             <div class="column">
                 <div class="box">
-                    <img class="logo mb-5" src="assets/tudublin_big_logo.png">
+                    <img alt="" class="logo mb-5" src="assets/tudublin_big_logo.png">
                     <h3 class="title is-5">TU Dublin</h3>
                     <h4 data-i18n="tudublin-date" class="subtitle is-6"></h4>
                     <p data-i18n="tudublin-description" class="mb-2 has-text-weight-semibold"></p>
@@ -513,99 +598,6 @@
     </div>
 </section>
 
-<section id="hobbits_title" class="hero is-link">
-    <div class="hero-body">
-        <p data-i18n="section-t5" class="title"></p>
-    </div>
-</section>
-
-<section id="hobbits_content" class="section">
-    <div class="container">
-        <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="card custom-card">
-                    <div class="card-image">
-                        <figure class="image is-5by3">
-                            <img src="assets/stade_rennais.jpg" alt="Stade Rennais">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4" data-i18n="football-title"></p>
-                        <p class="content" data-i18n="football-content"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card custom-card">
-                    <div class="card-image">
-                        <figure class="image is-5by3">
-                            <img src="assets/running.png" alt="Running">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4" data-i18n="running-title"></p>
-                        <p class="content" data-i18n="running-content"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card custom-card">
-                    <div class="card-image">
-                        <figure class="image is-5by3">
-                            <img src="assets/la-vita-e-bella.png" alt="La vita e bella">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4" data-i18n="cinema-title"></p>
-                        <p class="content" data-i18n="cinema-content"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="card custom-card">
-                    <div class="card-image">
-                        <figure class="image is-5by3">
-                            <img src="assets/tennis.jpg" alt="Tennis">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4" data-i18n="tennis-title"></p>
-                        <p class="content" data-i18n="tennis-content"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card custom-card">
-                    <div class="card-image">
-                        <figure class="image is-5by3">
-                            <img src="assets/litterature.jpg" alt="Litterature">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4" data-i18n="lecture-title"></p>
-                        <p class="content" data-i18n="lecture-content"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card custom-card">
-                    <div class="card-image">
-                        <figure class="image is-5by3">
-                            <img src="assets/breizh_flag.svg" alt="Drapeau breton">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4" data-i18n="breton-title"></p>
-                        <p class="content" data-i18n="breton-content"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="hero is-primary">
     <div class="hero-body">
         <p data-i18n="section-t6" class="title"></p>
@@ -655,9 +647,8 @@
         </div>
     </div>
     <div class="is-flex is-justify-content-flex-end">
-        <p class="mt-5">v3.4.2</p>
+        <p class="mt-5">v3.5.0</p>
     </div>
 </section>
-<script src="hobbits.js"></script>
 </body>
 </html>
