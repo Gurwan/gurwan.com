@@ -2,7 +2,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('lng') || 'fr';
     const langData = languageData[userPreferredLanguage] || {};
     updateContent(langData);
-    changeButtons(userPreferredLanguage);
 });
 
 async function setLanguage(lang) {
